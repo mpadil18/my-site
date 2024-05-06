@@ -1,5 +1,6 @@
 import "./home.css"
 import Image from 'next/image'
+import WorkRow from '../workrow/workrow'
 
 export default function Home() {
     return (
@@ -22,41 +23,20 @@ export default function Home() {
 
             <div className="WorkExp">
                 <div className="headerAbout">Work Experience<hr></hr></div>
-                <div className="WorkRow">
-                    <p className="WorkYear">2023</p>
-                    <ul className="Experience">
-                        <li>
-                        <p className="WorkPlace"><strong>CITRIS and the Banatao Institute</strong> - Intern</p>
-                        <p className="WorkDesc">Received training in leadership and project management, and researched robotics projects.</p>
-                        </li>
-                        <li>
-                        <p className="WorkPlace"><strong>GraceHacks @ UCSC</strong> - Tech Lead & Co-Executive Lead</p>
-                        <p className="WorkDesc">Cross-team hosted 3 annual 24-hr Hackathons for 300+ students of marginalized genders from 6 countries.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div className="WorkRow">
-                    <p className="WorkYear">2022</p>
-                    <ul className="Experience">
-                        <li>
-                        <p className="WorkPlace"><strong>Robinhood Markets, Inc.</strong> - Software Engineer Intern</p>
-                        <p className="WorkDesc">Collaborated with cross-functional teams to implement customer experience solutions across the organization.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div className="WorkRow">
-                    <p className="WorkYear">2019</p>
-                    <ul className="Experience">
-                        <li>
-                        <p className="WorkPlace"><strong>Harbor High School</strong> - AVID Tutor</p>
-                        <p className="WorkDesc">Tutored students in all academic areas, including English, Science, Social Science, Computer skills, and Math.</p>
-                        </li>
-                        <li>
-                        <p className="WorkPlace"><strong>Little Caesars Pizza</strong> - Crew Member</p>
-                        <p className="WorkDesc">Resolved customer complaints and determined appropriate courses of action with managers and coworkers.</p>
-                        </li>
-                    </ul>
-                </div>
+                <WorkRow 
+                    workYear={2023}
+                    workArray={[["CITRIS and the Banatao Institute", "Intern", "Received training in leadership and project management, and researched robotics projects."],
+                ["GraceHacks @ UCSC", "Tech Lead & Co-Executive Lead", "Cross-team hosted 3 annual 24-hr Hackathons for 300+ students of marginalized genders from 6 countries."]]}
+                />
+                <WorkRow 
+                    workYear={2022}
+                    workArray={[["Robinhood Markets, Inc.", "Backend Engineering Intern", "Collaborated with cross-functional teams to implement customer experience solutions across the organization."]]}
+                />
+                <WorkRow 
+                    workYear={2019}
+                    workArray={[["Harbor High School", "AVID Tutor", "Tutored students in all academic areas, including English, Science, Social Science, Computer skills, and Math."],
+                ["Little Caesars Pizza", "Crew Member", "Resolved customer complaints and determined appropriate courses of action with managers and coworkers."]]}
+                />
             </div>
         </div>
     );
