@@ -1,0 +1,67 @@
+.Home {
+    color: white;
+}
+.Hero {
+    /* height: 28vh; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 0px 30px 0px;
+}
+
+.meImg img {
+    border-radius: 200px;
+}
+
+.AboutMe {
+    width: 40%;
+}
+
+.headerAbout {
+    font-weight: bold;
+    font-size: 40px;
+    color: #F4D24F;
+}
+
+.headerContent {
+    font-size: 20px;
+}
+
+.WorkRow {
+    padding: 0px 15%;
+    display: flex;
+    align-items: center;
+
+    .WorkYear {
+        font-size: 40px;
+        align-self: baseline;
+    }
+}
+
+.Experience {
+    padding: 0px 0px 0px 20%;
+    margin: 5px;
+
+    .WorkPlace {
+        font-size: 30px;
+    }
+
+    /* .WorkPlace:before {
+        content:"• ";
+        color: #F4D24F;
+    } */
+
+    .WorkDesc {
+        font-size: 20px;
+    }
+
+    /* .exp {
+        display: list-item;
+        list-style-type: disc;
+    } */
+}
+
+li::marker {
+    color: #F4D24F;
+    font-size: 2rem;
+}
