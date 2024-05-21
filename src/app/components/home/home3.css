@@ -65,8 +65,11 @@ li::marker {
 }
 
 .AboutMe {
-    padding: 0px 0px 0px 20%;
+    padding: 0px 0px 0px 13%;
     margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     .WorkPlace {
         font-size: 30px;
@@ -78,6 +81,5 @@ li::marker {
 }
 
 .area {
-    display: flex;
-    flex-direction: row;
+    max-width: 80%;
 }

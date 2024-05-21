@@ -1,4 +1,4 @@
-import "./home2.css"
+import "./home3.css"
 import Image from 'next/image'
 import WorkRow from '../workrow/workrow'
 
@@ -16,8 +16,22 @@ export default function Home() {
                 </div>
                 {/* This will involve states for about and content */}
                 <div className="AboutMe">
+                    <Image 
+                                    src="/Play-2.png"
+                                    alt="Left Arrow"
+                                    width={40}
+                                    height={40}
+                    />
+                    <span className="area">
                     <p className="headerAbout">Hello, world!</p>
                     <p className="headerContent">I’m a 22 year old first gen college grad. I’ve been a long time lover of art, and my time as a Banana Slug at UCSC helped me develop a fondness for nature and technology. <br/><br/>Click on the side arrows to learn more about me!</p>
+                    </span>
+                    <Image 
+                                    src="/Play.png"
+                                    alt="Right Arrow"
+                                    width={40}
+                                    height={40}
+                    />
                 </div>
             </div>
 
