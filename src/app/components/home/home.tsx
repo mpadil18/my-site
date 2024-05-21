@@ -1,4 +1,4 @@
-import "./home.css"
+import "./home2.css"
 import Image from 'next/image'
 import WorkRow from '../workrow/workrow'
 
@@ -26,16 +26,19 @@ export default function Home() {
                 <WorkRow 
                     workYear={2023}
                     workArray={[["CITRIS and the Banatao Institute", "Intern", "Received training in leadership and project management, and researched robotics projects."],
-                ["GraceHacks @ UCSC", "Tech Lead & Co-Executive Lead", "Cross-team hosted 3 annual 24-hr Hackathons for 300+ students of marginalized genders from 6 countries."]]}
+                ["GraceHacks @ UCSC", "Tech Lead & Co-Executive Lead", "(Jun '20 - Jul '23) Cross-team hosted 3 annual 24-hr Hackathons for 300+ students of marginalized genders from 6 countries."]]}
                 />
                 <WorkRow 
                     workYear={2022}
                     workArray={[["Robinhood Markets, Inc.", "Backend Engineering Intern", "Collaborated with cross-functional teams to implement customer experience solutions across the organization."]]}
                 />
                 <WorkRow 
+                    workYear={2021}
+                    workArray={[["Harbor High School", "AVID Tutor", "(Nov '19 - Apr '21) Tutored students in all academic areas, including English, Science, Social Science, Computer skills, and Math."]]}
+                />
+                <WorkRow 
                     workYear={2019}
-                    workArray={[["Harbor High School", "AVID Tutor", "Tutored students in all academic areas, including English, Science, Social Science, Computer skills, and Math."],
-                ["Little Caesars Pizza", "Crew Member", "Resolved customer complaints and determined appropriate courses of action with managers and coworkers."]]}
+                    workArray={[["Little Caesars Pizza", "Crew Member", "Resolved customer complaints and determined appropriate courses of action with managers and coworkers."]]}
                 />
             </div>
         </div>

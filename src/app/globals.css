@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Inria Sans');
 
+* {
+    font-family: 'Inria Sans';
+}
+
 body {
     background: linear-gradient(90deg, black 60%, grey);
     background: linear-gradient(to bottom right, black 20%, grey);
