@@ -1,8 +1,34 @@
+// To inform next js, this is a client component 
+"use client"; 
+
 import "./home3.css"
 import Image from 'next/image'
 import WorkRow from '../workrow/workrow'
+import { useState } from "react";
+
+const aboutMeInfo = [["Hello, world!", "I’m a 22 year old first gen college grad. I’ve been a long time lover of art, and my time as a Banana Slug at UCSC helped me develop a fondness for nature and technology."], ["What’s in my Tech Toolbelt?", "Python, REACT, JavaScript, GoLang, Visual Studio Code, Figma"],["What I wish I knew when I started coding...", "I’m a 22 year old first gen college grad. I’ve been a long time lover of art, and my time as a Banana Slug at UCSC helped me develop a fondness for nature and technology."]]
 
 export default function Home() {
+    const [currAboutMe, setCurrAboutMe] = useState(0);
+
+    const frwdInfo = (index:number):undefined => {
+        if (index == aboutMeInfo.length - 1) {
+            setCurrAboutMe(0);
+        }
+        else {
+            setCurrAboutMe(index + 1);
+        }
+    };
+
+    const bkwrdInfo = (index:number):undefined => {
+        if (index == 0) {
+            setCurrAboutMe(aboutMeInfo.length - 1);
+        }
+        else {
+            setCurrAboutMe(index - 1);
+        }
+    };
+    
     return (
         <div className="Home">
             <div className="Hero">
@@ -16,22 +42,30 @@ export default function Home() {
                 </div>
                 {/* This will involve states for about and content */}
                 <div className="AboutMe">
+                <button className="arrow"
+                        onClick={() => bkwrdInfo(currAboutMe)}
+                    >
                     <Image 
-                                    src="/Play-2.png"
-                                    alt="Left Arrow"
-                                    width={40}
-                                    height={40}
-                    />
+                        src="/Play-2.png"
+                        alt="Left Arrow"
+                        width={40}
+                        height={40}
+                    />                  
+                </button>
                     <span className="area">
-                    <p className="headerAbout">Hello, world!</p>
-                    <p className="headerContent">I’m a 22 year old first gen college grad. I’ve been a long time lover of art, and my time as a Banana Slug at UCSC helped me develop a fondness for nature and technology. <br/><br/>Click on the side arrows to learn more about me!</p>
+                    <p className="headerAbout">{aboutMeInfo[currAboutMe][0]}</p>
+                    <p className="headerContent">{aboutMeInfo[currAboutMe][1]}<br/><br/>Click on the side arrows to learn more about me!</p>
                     </span>
-                    <Image 
-                                    src="/Play.png"
-                                    alt="Right Arrow"
-                                    width={40}
-                                    height={40}
-                    />
+                    <button className="arrow"
+                        onClick={() => frwdInfo(currAboutMe)}
+                    >
+                        <Image 
+                            src="/Play.png"
+                            alt="Right Arrow"
+                            width={40}
+                            height={40}
+                        />                        
+                    </button>
                 </div>
             </div>
 
