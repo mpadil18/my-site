@@ -1,0 +1,83 @@
+.Home {
+    color: white;
+}
+
+.headerAbout {
+    font-weight: bold;
+    font-size: 40px;
+    color: #F4D24F;
+}
+
+.headerContent {
+    font-size: 20px;
+}
+
+.WorkRow {
+    padding: 0px 15%;
+    display: flex;
+    align-items: center;
+
+    .WorkYear {
+        font-size: 40px;
+        align-self: baseline;
+        text-align: center;
+        min-width: 240px;
+    }
+}
+
+.Experience {
+    padding: 0px 0px 0px 20%;
+    margin: 5px;
+
+    .WorkPlace {
+        font-size: 30px;
+    }
+
+    /* .WorkPlace:before {
+        content:"• ";
+        color: #F4D24F;
+    } */
+
+    .WorkDesc {
+        font-size: 20px;
+    }
+
+    /* .exp {
+        display: list-item;
+        list-style-type: disc;
+    } */
+}
+
+li::marker {
+    color: #F4D24F;
+    font-size: 2rem;
+}
+
+.Hero {
+    padding: 0px 15%;
+    display: flex;
+    align-items: center;
+
+    .meImg img {
+        border-radius: 200px;
+        align-self: baseline;
+    }
+}
+
+.AboutMe {
+    padding: 0px 0px 0px 20%;
+    margin: 5px;
+
+    .WorkPlace {
+        font-size: 30px;
+    }
+
+    .WorkDesc {
+        font-size: 20px;
+    }
+}
+
+.area {
+    display: flex;
+    flex-direction: row;
+}

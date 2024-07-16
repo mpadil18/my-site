@@ -5,8 +5,10 @@
 }
 
 body {
-    background: linear-gradient(90deg, black 60%, grey);
-    background: linear-gradient(to bottom right, black 20%, grey);
+    background: black;
+    /* background: linear-gradient(90deg, black 60%, grey);
+    background: linear-gradient(to bottom right, black 20%, grey); */
+    
     /* height: 100vh; */
     padding: 0px 30px
 }
