@@ -1,7 +1,7 @@
 // To inform next js, this is a client component 
 "use client"; 
 
-import "./home3.css"
+import styles from "./home3.module.css"
 import Image from 'next/image'
 import WorkRow from '../workrow/workrow'
 import { useState } from "react";
@@ -30,9 +30,9 @@ export default function Home() {
     };
     
     return (
-        <div className="Home">
-            <div className="Hero">
-                <div className="meImg">
+        <div className={styles.Home}>
+            <div className={styles.Hero}>
+                <div className={styles.meImg}>
                     <Image 
                         src="/MaritzaP.png"
                         alt="Picture of Maritza"
@@ -41,8 +41,8 @@ export default function Home() {
                     />
                 </div>
                 {/* This will involve states for about and content */}
-                <div className="AboutMe">
-                <button className="arrow"
+                <div className={styles.AboutMe}>
+                <button className={styles.arrow} title="See previous facts about me"
                         onClick={() => bkwrdInfo(currAboutMe)}
                     >
                     <Image 
@@ -52,11 +52,11 @@ export default function Home() {
                         height={40}
                     />                  
                 </button>
-                    <span className="area">
-                    <p className="headerAbout">{aboutMeInfo[currAboutMe][0]}</p>
-                    <p className="headerContent">{aboutMeInfo[currAboutMe][1]}<br/><br/>Click on the side arrows to learn more about me!</p>
+                    <span className={styles.area}>
+                    <p className={styles.headerAbout}>{aboutMeInfo[currAboutMe][0]}</p>
+                    <p className={styles.headerContent}>{aboutMeInfo[currAboutMe][1]}<br/><br/>Click on the side arrows to learn more about me!</p>
                     </span>
-                    <button className="arrow"
+                    <button className={styles.arrow} title="See other facts about me"
                         onClick={() => frwdInfo(currAboutMe)}
                     >
                         <Image 
@@ -69,8 +69,8 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="WorkExp">
-                <div className="headerAbout">Work Experience<hr></hr></div>
+            <div className={styles.WorkExp}>
+                <div className={styles.headerAbout}>Work Experience<hr></hr></div>
                 <WorkRow 
                     workYear={2023}
                     workArray={[["CITRIS and the Banatao Institute", "Intern", "Received training in leadership and project management, and researched robotics projects."],

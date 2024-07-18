@@ -1,0 +1,31 @@
+.WorkRow {
+    padding: 0px 15%;
+    display: flex;
+    align-items: center;
+
+    .WorkYear {
+        font-size: 40px;
+        align-self: baseline;
+        text-align: center;
+        min-width: 240px;
+    }
+}
+
+.Experience {
+    padding: 0px 0px 0px 20%;
+    margin: 5px;
+
+    .WorkPlace {
+        font-size: 30px;
+    }
+
+    .WorkDesc {
+        font-size: 20px;
+    }
+
+}
+
+.Experience li::marker {
+    color: #F4D24F;
+    font-size: 2rem;
+}

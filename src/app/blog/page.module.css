@@ -2,8 +2,6 @@
     color: white;
 }
 
-
-
 .project {
     display: flex;
     flex-direction: column;
@@ -11,20 +9,32 @@
     max-width: 270px;
     margin: 0px;
 
-    .projectTitle, .projectYear {
-        color: #F4D24F;
-        font-size: 30px;
-        margin: 10px 0px;
-
-    }
     .projectDesc {
         color: white;
         font-size: 15px;
     }
 
-    .projectImg img {
+    /* .projectImg img {
         border-radius: 50px;
-    }
+    } */
+}
+
+.projectTitle, .projectYear {
+    color: #F4D24F;
+    font-size: 30px;
+
+}
+
+.projectYear {
+    text-align: center;
+    margin: 1.25% 0%;
+}
+
+.projectTitle {  
+    margin: 10px 0px;
+}
+.projectTitle, .projectDesc {
+    text-align: left;
 }
 
 
@@ -36,7 +46,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     flex-wrap: wrap;
 }
 .Hero {
@@ -104,7 +114,32 @@
     } */
 }
 
-li::marker {
+/* li::marker {
     color: #F4D24F;
     font-size: 2rem;
+} */
+
+.imageContainer {
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+}
+  
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+  
+.overlay {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    left: 0;
+    width: 100%;
+    height: 20%; /* Cover the bottom half */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity */
+}
+
+.date {
+    text-align: end;
+    margin: 15px 20px;
 }
