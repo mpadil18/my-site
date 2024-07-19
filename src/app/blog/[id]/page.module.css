@@ -1,0 +1,30 @@
+.BlogDetailView {
+    color: white;
+}
+
+.columnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.headerAbout {
+    font-weight: bold;
+    font-size: 40px;
+    color: #F4D24F;
+}
+
+.postDate, .subHeader {
+    font-size: 30px;
+    margin: 24px 0px;
+}
+
+.subHeader {
+    font-weight: bolder;
+}
+
+.subText {
+    font-size: 25px;
+    font-weight: lighter;
+}
