@@ -2,22 +2,36 @@
     color: white;
 }
 
-.columnContainer {
+.rowContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    margin: 24px 0px;
 }
 
-.headerAbout {
+.postTitle {
     font-weight: bold;
     font-size: 40px;
     color: #F4D24F;
 }
 
+.postSection, .postSectionImageRight, .postSectionImageLeft .subHeader {
+    margin: 24px 0px;
+}
+
+.postSectionImageRight, .postSectionImageLeft {
+    .postSection {
+        margin: 0px;
+        /* max-width: 70%; */
+    }
+    .subHeader {
+        margin: 0px 0px 24px 0px;
+    }
+}
+
 .postDate, .subHeader {
     font-size: 30px;
-    margin: 24px 0px;
 }
 
 .subHeader {
@@ -27,4 +41,31 @@
 .subText {
     font-size: 25px;
     font-weight: lighter;
+}
+
+.postSectionImageLeft {
+    display: flex;
+    flex-direction: row;
+}
+.postSectionImageRight {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.postImageLeft {
+    margin: 0px 50px 0px 0px;
+}
+
+.postImageRight{
+    margin: 0px 0px 0px 50px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.subParent {
+    display: flex;
+    flex-direction: row;
 }
