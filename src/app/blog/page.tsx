@@ -7,15 +7,14 @@ import Records from "../../data/blog_posts.json"
 import styles from "./page.module.css"
 import Link from 'next/link'
 
-// const projectInfo = {"2023": [["Review - Moonridge Cafe", "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex."], ["Review - Everything Everywhere All At Once", "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex."], ["Ode to Cheese", "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex."], ["Some Large Title", "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex."]]}
 const projectInfo = Records
+
 export default function Blog() {
   console.log(Records);
   return (
     <main>
       <div className={styles.Blog}>
       <div className={styles.headerAbout}>Blog<hr></hr></div>
-      {/* <div className="projectGrid"> */}
       {
         Object.entries(projectInfo).map(([year, projectsByYear], index) =>
           <div className={styles.BlogSubContainer} key={index}>
@@ -43,7 +42,6 @@ export default function Blog() {
                   <div className={styles.projectDesc}>{project.content[0].subText.slice(0,150)}</div>        
                 </div>
                 </Link>
-                // </div>
               )}
             </div>
           </div>
