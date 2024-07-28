@@ -38,6 +38,13 @@
                 "subText":"Here's a caption with small detail...but also a long caption to see whats up",
                 "subImageAlignment": 2,
                 "imgWidthAndHeight": [1200, 700]
+            },
+
+            {
+                "subImage": 3,
+                "subImageAltText": "Another coffee",
+                "subImageAlignment": 2,
+                "imgWidthAndHeight": [1200, 700]
             }
         ]
     },

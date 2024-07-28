@@ -17,7 +17,7 @@ interface PostProps {
     {
         subImage?: number;
         subHeader?: string;
-        subText: string;
+        subText?: string;
         subImageAlignment?: number;
         subImageAltText?: string;
         imgWidthAndHeight?: Array<number>;
@@ -118,7 +118,7 @@ export default function BlogDetailView() {
                                                             height={(item.imgWidthAndHeight)[1]}
                                                             style={{maxWidth:"100%", height:"100%", objectFit:"contain"}}
                                                             />
-                                                            <div className={styles.caption}>{item.subText}</div>
+                                                            {(item.subText ? <div className={styles.caption}>{item.subText}</div> : null)}
                                                     </div>
                                                 </div>
                                                 :
