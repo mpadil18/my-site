@@ -10,7 +10,6 @@ import Link from 'next/link'
 const projectInfo = Records
 
 export default function Blog() {
-  console.log(Records);
   return (
     <main>
       <div className={styles.Blog}>
@@ -39,12 +38,12 @@ export default function Blog() {
                       <div className={styles.overlay}><p className={styles.date}>Mar 10</p></div>  
                   </div>
                   <div className={styles.projectTitle}>{project.title.slice(0, 33)}{(project.title.length > (project.title.slice(0, 33)).length) ? "..." : ""}</div>
-                  ({
+                  {
                     project.content[0].subText ?
                     <div className={styles.projectDesc}>{project.content[0].subText.slice(0,150)}</div>
                     :
                     null
-                  })      
+                  }
                 </div>
                 </Link>
               )}
