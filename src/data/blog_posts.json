@@ -26,6 +26,18 @@
                 "subHeader": "First Impressions",
                 "subText": "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex.",
                 "subImageAlignment": 1
+            },            
+            {
+                "subImageAltText": "A coffee",
+                "subHeader": "First Impressions",
+                "subText": "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex."
+            },
+            {
+                "subImage": 3,
+                "subImageAltText": "Another coffee",
+                "subText":"Here's a caption with small detail...but also a long caption to see whats up",
+                "subImageAlignment": 2,
+                "imgWidthAndHeight": [1200, 700]
             }
         ]
     },

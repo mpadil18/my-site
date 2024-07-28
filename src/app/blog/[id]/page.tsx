@@ -18,6 +18,7 @@ interface PostProps {
         subText: string;
         subImageAlignment?: number;
         subImageAltText?: string;
+        imgWidthAndHeight?: Array<number>;
     }
     >;
 }
@@ -74,39 +75,41 @@ export default function BlogDetailView() {
                         (currContent.content).map((item, index) =>
                                 ('subImage' in item ?
                                 (
-                                    // <div className={styles.parent} key={index}>
-                                    //     <div className={styles.subParent}>
-                                    //     <div className={styles.image}>
-                                    //         <Image
-                                    //             src={`/${currContent.title}/${item.subImage}.png`}
-                                    //             alt={`${item.subImageAltText}`}
-                                    //             width={400}
-                                    //             height={400}
-                                    //         />
-                                    //         </div>
-                                    //         <div className={styles.subHead}>{item.subHeader}</div>
-                                    //     </div>
-                                    //     <div className={styles.subText}>{item.subText}</div>
-                                    // </div>
-                                    <div className={(item.subImageAlignment == 1) ? styles.postSectionImageLeft : styles.postSectionImageRight} key={index}>
-                                        <div className={(item.subImageAlignment == 1) ? styles.postImageLeft : styles.postImageRight}>
-                                            <Image
-                                                src={`/${currContent.title}/${item.subImage}.png`}
-                                                alt={`${item.subImageAltText}`}
-                                                width={400}
-                                                height={400}
-                                            />
+                                    <div className={styles.postSection} key={index}>
+                                        {
+                                            // Render subHeader if exists. Else, nothing
+                                            item.subHeader ? <div className={styles.subHeader}>{item.subHeader}</div>
+                                            :
+                                            null
+                                        }
+                                            {item.subImageAlignment == 2 && item.imgWidthAndHeight ? 
+
+                                                <div className={styles.postImageCenter}>
+                                                    <div className={styles.centerImageContent}>
+                                                            <Image
+                                                            src={`/${currContent.title}/${item.subImage}.png`}
+                                                            alt={`${item.subImageAltText}`}
+                                                            width={(item.imgWidthAndHeight)[0]}
+                                                            height={(item.imgWidthAndHeight)[1]}
+                                                            style={{maxWidth:"100%", height:"100%", objectFit:"contain"}}
+                                                            />
+                                                            <div className={styles.caption}>{item.subText}</div>
+                                                    </div>
+                                                </div>
+                                                :
+                                                <div>
+                                                    <div className={(item.subImageAlignment == 1) ? styles.postImageLeft : styles.postImageRight}>
+                                                        <Image
+                                                        src={`/${currContent.title}/${item.subImage}.png`}
+                                                        alt={`${item.subImageAltText}`}
+                                                        width={400}
+                                                        height={400}
+                                                        />
+                                                    </div>
+                                                    <div className={styles.subText}>{item.subText}</div>
+                                                </div>
+                                            }
                                         </div>
-                                            <div className={styles.postSection} key={index}>
-                                                {
-                                                    // Render subHeader if exists. Else, nothing
-                                                    item.subHeader ? <div className={styles.subHeader}>{item.subHeader}</div>
-                                                    :
-                                                    null
-                                                }
-                                                <div className={styles.subText}>{item.subText}</div>
-                                            </div>
-                                    </div>
                                 ) :
                                 <div className={styles.postSection} key={index}>
                                     {
