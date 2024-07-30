@@ -1,0 +1,51 @@
+{
+    "art_data": [
+        {
+            "art_post_id": 0,
+            "title": "Sonic Says Happy Chilli Dog Day",
+            "date": "Mar 27, 2024",
+            "subtext_sections":
+                [
+                    "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex.",
+                    "Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque."
+                ],
+            "alt": "Sonic holding up a chilli dog while floating and relaxing in space",
+            "tags": ["Procreate", "iPad", "Sonic", "Digital", "Fan Art"]
+        },
+        {
+            "art_post_id": 1,
+            "title": "Some Other Title",
+            "date": "Mar 27, 2024",
+            "subtext_sections":
+                [
+                    "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex.",
+                    "Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque."
+                ],
+            "tags": ["Procreate"]
+        },
+        {
+            "art_post_id": 2,
+            "title": "Some Other Title",
+            "date": "Mar 27, 2024",
+            "subtext_sections":
+                [
+                    "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex.",
+                    "Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque."
+                ],
+            "tags": ["Procreate"]
+        },
+
+        {
+            "art_post_id": 2,
+            "title": "Some Other Title",
+            "date": "Mar 27, 2024",
+            "subtext_sections":
+                [
+                    "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex.",
+                    "Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque."
+                ],
+            "tags": ["Procreate"]
+        }            
+    ]
+
+}

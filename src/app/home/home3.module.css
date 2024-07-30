@@ -12,7 +12,7 @@
     font-size: 20px;
 }
 
-.WorkRow {
+/* .WorkRow {
     padding: 0px 15%;
     display: flex;
     align-items: center;
@@ -33,25 +33,16 @@
         font-size: 30px;
     }
 
-    /* .WorkPlace:before {
-        content:"• ";
-        color: #F4D24F;
-    } */
-
     .WorkDesc {
         font-size: 20px;
     }
 
-    /* .exp {
-        display: list-item;
-        list-style-type: disc;
-    } */
 }
 
 li::marker {
     color: #F4D24F;
     font-size: 2rem;
-}
+} */
 
 .Hero {
     padding: 0px 15%;
