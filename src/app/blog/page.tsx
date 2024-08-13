@@ -20,12 +20,7 @@ export default function Blog() {
             <div className={styles.projectYear}>{year}</div>
             <div className={styles.projectGrid}>
               {projectsByYear.map((project, index) => 
-              // <div key={index}>
-              <Link
-                href={
-                {pathname: `/blog/${project.title.replaceAll(" ", "_")}`
-                }} key={project.title.replaceAll(" ", "_")} style={{ textDecoration: 'none', color: 'white' }}>
-                <div className={styles.project}>
+                <div className={(index % 3 == 0 ? styles.projectNoLeftMargin : (index - 2) % 3 == 0 ? styles.projectNoRightMargin : styles.project)} key={index}>
                   <div className={`${styles.projectImg} ${styles.imageContainer}`}>
                     <span className={styles.image}>
                       <Image 
@@ -33,10 +28,15 @@ export default function Blog() {
                           alt={`Picture of project - /${project.title}`}
                           width={270}
                           height={270}
+                          style={{ width: '100%', height: '100%' }}
                       />       
                       </span>
                       <div className={styles.overlay}><p className={styles.date}>Mar 10</p></div>  
                   </div>
+                  <Link
+                  href={
+                  {pathname: `/blog/${project.title.replaceAll(" ", "_")}`
+                  }} key={project.title.replaceAll(" ", "_")} style={{ textDecoration: 'none', color: 'white' }}>
                   <div className={styles.projectTitle}>{project.title.slice(0, 33)}{(project.title.length > (project.title.slice(0, 33)).length) ? "..." : ""}</div>
                   {
                     project.content[0].subText ?
@@ -44,8 +44,8 @@ export default function Blog() {
                     :
                     null
                   }
+                  </Link>
                 </div>
-                </Link>
               )}
             </div>
           </div>
