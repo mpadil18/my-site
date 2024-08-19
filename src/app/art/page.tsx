@@ -15,6 +15,10 @@ export default function Art() {
                 {
                     (artInfo.art_data).map((artPost, index) => (
                         // <div className={styles.artPostContainer} key={index}>
+                        <Link
+                        href={
+                        {pathname: `/art/${artPost.title.replaceAll(" ", "_")}`
+                        }} key={index}>
                             <Image
                                 src={`/art_images/${artPost.art_post_id}.png`}
                                 alt={`${artPost.alt}`}
@@ -24,7 +28,7 @@ export default function Art() {
                                 key={index}
                                 style={{ width: '32%', height: '32%' }}
                             />
-                        // </div>
+                        </Link>
                     ))
                 }
                 </div>

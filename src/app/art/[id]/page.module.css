@@ -1,0 +1,42 @@
+.ArtDetailView {
+    color: white;
+    /* height: 70vh; */
+}
+
+.headerAbout {
+    font-weight: bold;
+    font-size: 40px;
+    color: #F4D24F;
+    margin-bottom: 2%;
+}
+
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+    /* height: 100%; */
+    /* justify-content: space-between; */
+}
+
+.artDetailViewText {
+    margin: 0px 0px 0px 2%;
+    /* max-width: 50%; */
+}
+
+.sideHeading {
+    margin-bottom: 2%;
+}
+
+.artPostTitle {
+    font-size: 40px;
+    font-style: italic;
+    margin: 0px 0px 10px 0px;
+}
+
+.artPostDate {
+    font-size: 34px;
+}
+
+.artDetailViewSubText {
+    font-size: 25px;
+    font-style: normal;
+}
