@@ -20,7 +20,15 @@ interface PostProps {
     
 }
 
+export const dynamicParams = false
+
+// export function generateStaticParams() {
+//     return [{ id: 'Sonic_Says_Happy_Chilli_Dog_Day' }, { id: 'Mr._E_Mage_&_Audrey_Meditate_in_the_Woods' }, { id: 'Espathra' }, {id: 'Strawberry_Shortcake'}, { id: 'Ramattra'}, {id: 'A_World_of_Hassle'}]
+//   }
+   
+
 export default function ArtDetailView() {
+    // const { id } = params
     const artTitleToFetch = usePathname().replaceAll("/art/", "").replaceAll("_", " ")
     const [currContent, setCurrContent] = useState<PostProps>({art_post_id: -1, title: "", date: "", subtext_sections: [], alt: ""});
     const [loading, setLoading] = useState(true)
