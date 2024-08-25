@@ -25,6 +25,8 @@ interface PostProps {
     >;
 }
 
+export const dynamicParams = false
+
 export default function BlogDetailView() {
     // Retrieve the pathname that the user attempted to access, and use to search into the database
     const blogTitleToFetch = usePathname().replaceAll("/blog/", "").replaceAll("_", " ")
