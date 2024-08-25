@@ -147,19 +147,19 @@
 }
 
 .project, .projectNoLeftMargin, .projectNoRightMargin {
-    width:32%;
-    height:32%;
-    margin: 0% .95% 2% .95%;
+    width:23%;
+    height:23%;
+    margin: 0% 1.3% 2% 1.3%;
 }
 
 .project {
-    margin: 0% .95% 2% .95%;
+    margin: 0% 1.3% 2% 1.3%;
 }
 
 .projectNoLeftMargin {
-    margin: 0% .95% 2% 0;
+    margin: 0% 1.3% 2% 0;
 }
 
 .projectNoRightMargin {
-    margin: 0% 0 2% .95%;
+    margin: 0% 0 2% 1.3%;
 }

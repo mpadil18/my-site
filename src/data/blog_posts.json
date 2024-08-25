@@ -1,109 +1,40 @@
 {
-    "2023":
+    "all_blog_data":
     [
-    {
-    "title": "Review - Moonridge Cafe",
-    "date": "Mar 12, 2024",
-    "content": 
-        [
-            {
-                "subImage": 0,
-                "subImageAltText": "A coffee",
-                "subHeader": "First Impressions",
-                "subText": "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex.",
-                "subImageAlignment": 0
-            },
-            {
-                "subText": "Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque."
-            },
-            {
-                "subHeader": "What I ordered,  and what I think.",
-                "subText": "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex."
-            },
-            {
-                "subImage": 0,
-                "subImageAltText": "A coffee",
-                "subHeader": "First Impressions",
-                "subText": "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex.",
-                "subImageAlignment": 1
-            },            
-            {
-                "subImageAltText": "A coffee",
-                "subHeader": "First Impressions",
-                "subText": "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex."
-            },
-            {
-                "subImage": 3,
-                "subImageAltText": "Another coffee",
-                "subText":"Here's a caption with small detail...but also a long caption to see whats up",
-                "subImageAlignment": 2,
-                "imgWidthAndHeight": [1200, 700]
-            },
+        {
+            "title": "5 Minutes of Cleaning the Instant Pot",
+            "date": "August 19, 2024",
+            "content": 
+                [
+                    {
+                        "subText": "“At least this’ll help us prevent the moss meat,”"
+                    },
+                    {
+                        "subText": "I hear my boyfriend say, as I stare down at the beef broth sitting in the instant pot. Just before this, I opened a random page from my “5 Minutes of Bliss” book, hoping to find some cute activity to pass the time with, and to have a nice story to blog about."
+                    },
+                    {
+                        "subImage": 0,
+                        "subText": "But nope, in a sick twist of fate, I turn onto the “Cross One Thing Off Your To Do List” page. I set a 5 minute timer and went to work: pouring the collagen gunk into a bag, throwing it in the trash, and scraping off the sides and bottoms a few times. It’s an annoying task, certainly not one I wanted to do after a day of work and working out. But before I knew it, the worst was over, and I ended up with a pot soaking in hot, soapy water. Finally free of its beefy curse."
+                    },
+                    {
+                        "subText": "And who knows how long I’ll let that pot sit there before I finish the job. But what matters is that I saved my future self from dealing with mossy meat."
+                    },
 
-            {
-                "subImage": 3,
-                "subImageAltText": "Another coffee",
-                "subImageAlignment": 2,
-                "imgWidthAndHeight": [1200, 700]
-            }
-        ]
-    },
-    {
-        "title": "Ode to Cheese",
-        "date": "Mar 12, 2024",
-        "content": 
-            [
-                {
-                    "subHeader": "First Impressions",
-                    "subText": "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex."
-                },
-                {
-                    "subText": "Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque."
-                },
-                {
-                    "subHeader": "What I ordered,  and what I think.",
-                    "subText": "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex."
-                }  
-            ]
-        },
-        {
-            "title": "Ode to Cheese",
-            "date": "Mar 12, 2024",
-            "content": 
-                [
                     {
-                        "subHeader": "First Impressions",
-                        "subText": "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex."
+                        "subText": "Though I hoped to walk away from the book with some romantic experience to reflect on (like coloring a picture, meditating, or planning a picnic), I walked away with something I truly needed- time to handle some little thing weighing on my shoulders. The real necessities in life may be repetitive, and they aren’t always going to be glamorous. But tending to them only helps you enjoy life more, so you can be more free and in tune with the present moment."
                     },
                     {
-                        "subText": "Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque."
+                        "subText": "Making moments like these fun by turning tasks into challenges, doing something in the presence of a loved one, or simply acknowledging the tiny, slow, repetitive movements that make us human, can grease the wheels of life. Instead of falling into the trap of Sisyphus, feeling dread as we push through the same challenges everyday, we can fall in love with the feeling of being alive. Over, and over again."
                     },
+
                     {
-                        "subHeader": "What I ordered,  and what I think.",
-                        "subText": "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex."
-                    }  
+                        "subText": "Re-learning what it means to live, as many times as we need to."
+                    },
+
+                    {
+                        "subText": "So, I may have to clean a greasy instant pot every week. But it really isn’t bad to spend 5 minutes cleaning and disposing of its garbage. Ending up with a pot to clean means I spent the time to cook good, real food, which is something definitely worth celebrating. "
+                    }
                 ]
             }
-    ],
-    "2024":
-    [    
-        {
-            "title": "Review - Everything Everywhere All At Once",
-            "date": "Mar 12, 2024",
-            "content": 
-                [
-                    {
-                        "subHeader": "First Impressions",
-                        "subText": "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex."
-                    },
-                    {
-                        "subText": "Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque."
-                    },
-                    {
-                        "subHeader": "What I ordered,  and what I think.",
-                        "subText": "Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex. Proin nec volutpat arcu. Proin a sollicitudin lectus, et sodales neque. Vestibulum eu finibus ex."
-                    }  
-                ]
-        }
     ]
 }

@@ -6,7 +6,7 @@ import Image from 'next/image'
 import WorkRow from '../workrow/workrow'
 import { useState } from "react";
 
-const aboutMeInfo = [["Hello, world!", "I’m a 22 year old first gen college grad. I’ve been a long time lover of art, and my time as a Banana Slug at UCSC helped me develop a fondness for nature and technology."], ["What’s in my Tech Toolbelt?", "Python, REACT, JavaScript, GoLang, Visual Studio Code, Figma."],["What I wish I knew when I started coding...", "I’m a 22 year old first gen college grad. I’ve been a long time lover of art, and my time as a Banana Slug at UCSC helped me develop a fondness for nature and technology."]]
+const aboutMeInfo = [["Hello, world!", "I’m a 22 year old first gen college grad. I’ve been a long time lover of art, and my time as a Banana Slug at UCSC helped me develop a fondness for nature and technology."], ["What’s in my Tech Toolbelt?", "Python, REACT, JavaScript, GoLang, Visual Studio Code, Figma."],["What I wish I knew when I started coding...", "As long as you start off with some kind of a plan, anything is achievable. Just by formulating what you want to create in pictures, words, and wireframes, half the battle is already done."]]
 
 export default function Home() {
     const [currAboutMe, setCurrAboutMe] = useState(0);

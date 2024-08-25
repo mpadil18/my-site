@@ -71,3 +71,12 @@
     max-width: 100%;
 }
 .caption {}
+
+.blogPostContent {
+    max-width: 1000px;
+}
+
+.blogPostContainer {
+    display: flex;
+    justify-content: center;
+}

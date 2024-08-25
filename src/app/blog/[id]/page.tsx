@@ -83,7 +83,8 @@ export default function BlogDetailView() {
                         <div className={styles.postDate}>{currContent.date}</div>
                     </div>
                     <hr></hr>
-
+                    <div className={styles.blogPostContainer}>
+                    <div className={styles.blogPostContent}>
                     {/* Iterate over each of the post's subsections & render them based on defined properties */}
                     {
                         (currContent.content).map((item, index) =>
@@ -152,7 +153,8 @@ export default function BlogDetailView() {
                                 )
                         )
                     }
-                    
+                </div>
+                </div>
                 </div>
                 :
                 <p style={{color:"white"}}>Sorry, {blogTitleToFetch} not found</p>

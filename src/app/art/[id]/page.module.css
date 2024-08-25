@@ -1,5 +1,7 @@
 .ArtDetailView {
     color: white;
+    display: flex;
+    justify-content: center;
     /* height: 70vh; */
 }
 
@@ -13,6 +15,7 @@
 .rowContainer {
     display: flex;
     flex-direction: row;
+    max-width: 1500px;
     /* height: 100%; */
     /* justify-content: space-between; */
 }
