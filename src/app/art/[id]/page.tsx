@@ -22,7 +22,9 @@ interface PostProps {
 // export const dynamicParams = false
 
 export async function generateStaticParams() {
-    return Records.art_data.map((d) => {id: d.title.replaceAll(" ", "_")});
+    // console.log(Records.art_data.map((d) => {return {id : d.title}}))
+    // console.log(Records.art_data.map((d) => {id: d.title}))
+    return Records.art_data.map((d) => {return {id : d.title.replaceAll(" ", "_")}});
 }
    
 
