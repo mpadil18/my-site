@@ -1,6 +1,3 @@
-// To inform next js, this is a client component 
-"use client"; 
-
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import Records from "../../../data/blog_posts.json"
@@ -25,39 +22,38 @@ interface PostProps {
     >;
 }
 
-export const dynamicParams = false
+export async function generateStaticParams() {
+    return Records.all_blog_data.map((d) => {id: d.title.replaceAll(" ", "_")});
+}
 
-export default function BlogDetailView() {
+export default function BlogDetailView({ params }: { params: { id: string } }) {
     // Retrieve the pathname that the user attempted to access, and use to search into the database
-    const blogTitleToFetch = usePathname().replaceAll("/blog/", "").replaceAll("_", " ")
-    const [currContent, setCurrContent] = useState<PostProps>({title:"", date:"", content:[{"subText":""}]} || {});
-    const [loading, setLoading] = useState(true)
-
-    useEffect(() => {
-        checkIfPostExists();
-    })
+    const blogTitleToFetch = params.id.replaceAll("_", " ")
+    const loading = false;
 
     // Function checks JSON file for the blog post title in the URL.
     // Regardless of whether records are found in the end, loading will cease.
     // TODO: replace this with a PSQL query
-    function checkIfPostExists():void {
-        if (blogTitleToFetch) {
-            // get vals from JSON
-            const valsFromRecords = Object.values(Records)
-            // search records. if a post title match is found, 
-            /// then set state for current item and stop rendering the loading screen.
-            for (const data of valsFromRecords) {
-                for (const item of data)
-                    if (item.title == (blogTitleToFetch)) {
-                        setCurrContent(item);
-                        setLoading(false)
-                        return;
+
+    function checkIfPostExists():PostProps {
+        // get vals from JSON
+        const valsFromRecords = Object.values(Records)
+        // console.log(valsFromRecords)
+        // search records. if a post title match is found, 
+        /// then set state for current item and stop rendering the loading screen.
+        for (const data of valsFromRecords) {
+            // console.log(data)
+            for (const item of data) {
+                // console.log(item)
+                if (item.title == blogTitleToFetch) {
+                    return item
                 }
-    
             }
         }
-        setLoading(false)
+        return {title:"", date:"", content:[{"subText":""}]}
     }
+
+    const currContent = checkIfPostExists();
 
     return (
         <main>

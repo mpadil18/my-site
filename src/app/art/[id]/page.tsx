@@ -1,5 +1,3 @@
-// To inform next js, this is a client component 
-"use client"; 
 
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
@@ -20,47 +18,39 @@ interface PostProps {
     
 }
 
-export const dynamicParams = false
+// Ensures that pages cannot be produced dynamically
+// export const dynamicParams = false
 
-// export function generateStaticParams() {
-//     return [{ id: 'Sonic_Says_Happy_Chilli_Dog_Day' }, { id: 'Mr._E_Mage_&_Audrey_Meditate_in_the_Woods' }, { id: 'Espathra' }, {id: 'Strawberry_Shortcake'}, { id: 'Ramattra'}, {id: 'A_World_of_Hassle'}]
-//   }
+export async function generateStaticParams() {
+    return Records.art_data.map((d) => {id: d.title.replaceAll(" ", "_")});
+}
    
 
-export default function ArtDetailView() {
-    // const { id } = params
-    const artTitleToFetch = usePathname().replaceAll("/art/", "").replaceAll("_", " ")
-    const [currContent, setCurrContent] = useState<PostProps>({art_post_id: -1, title: "", date: "", subtext_sections: [], alt: ""});
-    const [loading, setLoading] = useState(true)
+export default function ArtDetailView({ params }: { params: { id: string } }) {
+    // console.log(params.id)
+    const artTitleToFetch = params.id.replaceAll("_", " ")
+    
+    const loading = false;
 
-    useEffect(() => {
-        checkIfPostExists();
-    })
-
-    // Function checks JSON file for the blog post title in the URL.
-    // Regardless of whether records are found in the end, loading will cease.
-    // TODO: replace this with a PSQL query
-    function checkIfPostExists():void {
-        if (artTitleToFetch) {
+    function checkIfPostExists():PostProps {
             // get vals from JSON
             const valsFromRecords = Object.values(Records)
-            console.log(valsFromRecords)
+            // console.log(valsFromRecords)
             // search records. if a post title match is found, 
             /// then set state for current item and stop rendering the loading screen.
             for (const data of valsFromRecords) {
-                console.log(data)
+                // console.log(data)
                 for (const item of data) {
-                    console.log(item)
+                    // console.log(item)
                     if (item.title == artTitleToFetch) {
-                        setCurrContent(item)
-                        setLoading(false)
-                        return;
+                        return item
                     }
                 }
             }
-        }
-        setLoading(false)
+            return {art_post_id: -1, title: "", date: "", subtext_sections: [], alt: ""}
     }
+
+    const currContent = checkIfPostExists();
 
     return (
         <main>
@@ -106,7 +96,7 @@ export default function ArtDetailView() {
                 </div>
 
                 :
-                <p style={{color:"white"}}>Sorry, {artTitleToFetch} not found</p>
+                <p style={{color:"white"}}>Sorry, not found</p>
 
             }
         </main>
