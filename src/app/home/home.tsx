@@ -34,7 +34,7 @@ export default function Home() {
             <div className={styles.Hero}>
                 <div className={styles.meImg}>
                     <Image 
-                        src="/MaritzaP.png"
+                        src="/my-site/MaritzaP.png"
                         alt="Picture of Maritza"
                         width={240}
                         height={240}
@@ -46,7 +46,7 @@ export default function Home() {
                         onClick={() => bkwrdInfo(currAboutMe)}
                     >
                     <Image 
-                        src="/Play-2.png"
+                        src="/my-site/Play-2.png"
                         alt="Left Arrow"
                         width={40}
                         height={40}
