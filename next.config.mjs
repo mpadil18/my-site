@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: '/my_site24',
-  };
-
+  basePath: '/my-site',
+  // Other configurations
+};
 export default nextConfig;
