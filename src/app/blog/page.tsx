@@ -22,7 +22,7 @@ export default function Blog() {
                   <div className={`${styles.projectImg} ${styles.imageContainer}`}>
                     <span className={styles.image}>
                       <Image 
-                          src={`/${project.title}.png`}
+                          src={`/my-site/${project.title}.png`}
                           alt={`Picture of project - /${project.title}`}
                           width={270}
                           height={270}

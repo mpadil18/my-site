@@ -17,7 +17,7 @@ export default function Code() {
           <div className={(index % 4 == 0 ? styles.projectNoLeftMargin : (index - 3) % 4 == 0 ? styles.projectNoRightMargin : styles.project)} key={index}>
           <div className={`${styles.projectImg} ${styles.imageContainer}`}>
               <Image 
-                  src={`/project_images/${project.project_id}.png`}
+                  src={`/my-site/project_images/${project.project_id}.png`}
                   alt="Picture of Project"
                   width={270}
                   height={270}

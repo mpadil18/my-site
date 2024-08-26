@@ -20,7 +20,7 @@ export default function Art() {
                         {pathname: `/art/${artPost.title.replaceAll(" ", "_")}`
                         }} key={index}>
                             <Image
-                                src={`/art_images/${artPost.art_post_id}.png`}
+                                src={`/my-site/art_images/${artPost.art_post_id}.png`}
                                 alt={`${artPost.alt}`}
                                 width={350}
                                 height={350}

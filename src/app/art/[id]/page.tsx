@@ -68,7 +68,7 @@ export default function ArtDetailView({ params }: { params: { id: string } }) {
                 <div className={styles.ArtDetailView}>
                     <div className={styles.rowContainer}>
                     <Image
-                                src={`/art_images/${currContent.art_post_id}.png`}
+                                src={`/my-site/art_images/${currContent.art_post_id}.png`}
                                 alt={`${currContent.alt}`}
                                 width={350}
                                 height={350}

@@ -60,7 +60,7 @@ export default function Home() {
                         onClick={() => frwdInfo(currAboutMe)}
                     >
                         <Image 
-                            src="/Play.png"
+                            src="/my-site/Play.png"
                             alt="Right Arrow"
                             width={40}
                             height={40}

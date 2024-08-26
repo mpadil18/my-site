@@ -111,7 +111,7 @@ export default function BlogDetailView({ params }: { params: { id: string } }) {
                                                     and set style to resize image as screen size is changed */}
                                                     <div className={styles.centerImageContent}>
                                                             <Image
-                                                            src={`/${currContent.title}/${item.subImage}.png`}
+                                                            src={`/my-site/${currContent.title}/${item.subImage}.png`}
                                                             alt={`${item.subImageAltText}`}
                                                             width={(item.imgWidthAndHeight)[0]}
                                                             height={(item.imgWidthAndHeight)[1]}
@@ -124,7 +124,7 @@ export default function BlogDetailView({ params }: { params: { id: string } }) {
                                                 <div>
                                                     <div className={(item.subImageAlignment == 1) ? styles.postImageLeft : styles.postImageRight}>
                                                         <Image
-                                                        src={`/${currContent.title}/${item.subImage}.png`}
+                                                        src={`/my-site/${currContent.title}/${item.subImage}.png`}
                                                         alt={`${item.subImageAltText}`}
                                                         width={400}
                                                         height={400}
