@@ -23,7 +23,7 @@ interface PostProps {
 }
 
 export async function generateStaticParams() {
-    return Records.all_blog_data.map((d) => {id: d.title.replaceAll(" ", "_")});
+    return Records.all_blog_data.map((d) => {return {id : d.title.replaceAll(" ", "_")}});
 }
 
 export default function BlogDetailView({ params }: { params: { id: string } }) {
