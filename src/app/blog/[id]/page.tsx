@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import Records from "../../../data/blog_posts.json"
-import { useState, useEffect } from "react";
 
 import styles from "./page.module.css"
 
