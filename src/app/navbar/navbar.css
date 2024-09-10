@@ -24,19 +24,37 @@
 @media (max-width: 900px) {
     .site-name {
         color: #F4D24F;
+        padding: 0px 10px;
     }
     .Menu {
-        /* position: fixed;
+        position: fixed;
         top: 0;
-        left: 0; */
+        left: 0;
         display: flex;
         justify-content: space-between;
-        width: 90vw;
+        width: 100vw;
         font-size: 30px;
-        /* background: rgba(255, 209, 81, 0.3) */
+        background: rgba(255, 209, 81, 0.3);
+        height: 120px;
     }
     
     .nav-buttons {
-        width: 20%;
+        margin: 4px 0px;
+    }
+
+    .Nav-Button {
+        padding: 20px 5px;
+        margin: 0px;
+        background: rgba(255, 209, 81, 0.3);
+        border: solid black 1px;
+        text-align: center;
+    }
+
+    .hamburgerMenu {
+        padding: 10px 0px;
+    }
+
+    .menu-container {
+        text-align: right;
     }
 }

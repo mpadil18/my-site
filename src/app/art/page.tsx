@@ -16,6 +16,7 @@ export default function Art() {
                     (artInfo.art_data).map((artPost, index) => (
                         // <div className={styles.artPostContainer} key={index}>
                         <Link
+                        style={{ width: 'unset' }}
                         href={
                         {pathname: `/art/${artPost.title.replaceAll(" ", "_")}`
                         }} key={index}>
