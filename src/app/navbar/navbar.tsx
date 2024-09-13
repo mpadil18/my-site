@@ -8,8 +8,9 @@ import Image from 'next/image'
 
 
 export default function Navbar() {
-    const [mobileView, setMobileView] = useState(typeof window !== 'undefined' && typeof screen !== 'undefined' ? screen.width <= 900 : false);
+    const [mobileView, setMobileView] = useState(typeof window !== 'undefined' ? window.innerWidth <= 900 : false);
     const [visibleMenuButtons, setVisibleMenuButtons] = useState(false);
+    const [isClient, setIsClient] = useState(false);
 
     const handleResize = () => {
         if (typeof window !== 'undefined' && typeof screen !== 'undefined') {
@@ -27,11 +28,20 @@ export default function Navbar() {
     }
 
     useEffect(() => {
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
+        const handleResize = () => {
+            setMobileView(window.innerWidth <= 900);
           };
+      
+          // Run on initial load
+          handleResize();
+      
+          // Add event listener
+          window.addEventListener('resize', handleResize);
+      
+          // Cleanup event listener on component unmount
+          return () => window.removeEventListener('resize', handleResize);
     }, []);
+
 
     return (
         mobileView ?

@@ -36,6 +36,7 @@
         font-size: 30px;
         background: rgba(255, 209, 81, 0.3);
         height: 120px;
+        z-index: 1000;
     }
     
     .nav-buttons {
