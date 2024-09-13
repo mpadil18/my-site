@@ -14,7 +14,7 @@ export default function Code() {
       <div className={styles.headerAbout}>Coding Projects<hr></hr></div>
       <div className={styles.projectGrid}>
         {projectInfo.map((project, index) => (
-          <div className={(index % 4 == 0 ? styles.projectNoLeftMargin : (index - 3) % 4 == 0 ? styles.projectNoRightMargin : styles.project)} key={index}>
+          <div className={`${(index % 4 == 0 ? styles.projectNoLeftMargin : (index - 3) % 4 == 0 ? styles.projectNoRightMargin : styles.project)} ${(index % 2 == 0 ? styles.rightMarginMobile : styles.leftMarginMobile)}`} key={index}>
           <div className={`${styles.projectImg} ${styles.imageContainer}`}>
               <Image 
                   src={`/my-site/project_images/${project.project_id}.png`}

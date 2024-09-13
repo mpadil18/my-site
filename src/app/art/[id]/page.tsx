@@ -56,6 +56,7 @@ export default function ArtDetailView({ params }: { params: { id: string } }) {
 
     return (
         <main>
+            <div className={styles.Art}>
             <div className={styles.headerAbout}>Art<hr></hr></div>
             {loading ?
 
@@ -73,10 +74,6 @@ export default function ArtDetailView({ params }: { params: { id: string } }) {
                                 width={350}
                                 height={350}
                                 className={styles.artPostImage}
-                                style={{     width: '70vh',
-                                    height: '70vh',
-                                    maxWidth: '50vw',
-                                    maxHeight: '50vw' }}
                     />
                     <div className={styles.artDetailViewText}>
                         <div className={styles.sideHeading}>
@@ -101,6 +98,7 @@ export default function ArtDetailView({ params }: { params: { id: string } }) {
                 <p style={{color:"white"}}>Sorry, not found</p>
 
             }
+            </div>
         </main>
     )
 }

@@ -1,25 +1,61 @@
-.Navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 12%;
-    font-size: 30px;
-    color: white;
+@media (min-width: 901px) {
+    .Navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 12%;
+        font-size: 30px;
+        color: white;
+    }
+
+    .nav-buttons {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-evenly;
+        
+    }
+
+    .site-name {
+        color: #F4D24F;
+    }
 }
 
-.nav-buttons {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    justify-content: space-evenly;
+@media (max-width: 900px) {
+    .site-name {
+        color: #F4D24F;
+        padding: 0px 10px;
+    }
+    .Menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        font-size: 30px;
+        background: rgba(255, 209, 81, 0.3);
+        height: 120px;
+        z-index: 1000;
+    }
     
-}
+    .nav-buttons {
+        margin: 4px 0px;
+    }
 
-.site-name {
-    color: #F4D24F;
-}
+    .Nav-Button {
+        padding: 20px 5px;
+        margin: 0px;
+        background: rgba(255, 209, 81, 0.3);
+        border: solid black 1px;
+        text-align: center;
+    }
 
-/* .Nav-Button {
-    color: white;
-    text-decoration: 
-} */
+    .hamburgerMenu {
+        padding: 10px 0px;
+    }
+
+    .menu-container {
+        text-align: right;
+    }
+}

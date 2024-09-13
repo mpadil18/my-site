@@ -1,84 +1,107 @@
-.Home {
-    color: white;
-}
+@media (min-width: 901px) {
+    .Home {
+        color: white;
+    }
 
-.headerAbout {
-    font-weight: bold;
-    font-size: 40px;
-    color: #F4D24F;
-}
-
-.headerContent {
-    font-size: 20px;
-}
-
-/* .WorkRow {
-    padding: 0px 15%;
-    display: flex;
-    align-items: center;
-
-    .WorkYear {
+    .headerAbout {
+        font-weight: bold;
         font-size: 40px;
-        align-self: baseline;
+        color: #F4D24F;
+    }
+
+    .headerContent {
+        font-size: 20px;
+    }
+
+    .Hero {
+        padding: 0px 15%;
+        display: flex;
+        align-items: center;
+
+        .meImg img {
+            border-radius: 200px;
+            align-self: baseline;
+        }
+        height: 400px;
+    }
+
+    .AboutMe {
+        padding: 0px 0px 0px 13%;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 500%;
+
+        .WorkPlace {
+            font-size: 30px;
+        }
+
+        .WorkDesc {
+            font-size: 20px;
+        }
+    }
+
+    .area {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .arrow {
+        all: unset;
+    }
+}
+
+@media (max-width: 900px) {
+    .Home {
+        color: white;
+    }
+    
+    .headerAbout {
+        font-weight: bold;
+        font-size: 40px;
+        color: #F4D24F;
         text-align: center;
-        min-width: 240px;
     }
-}
-
-.Experience {
-    padding: 0px 0px 0px 20%;
-    margin: 5px;
-
-    .WorkPlace {
-        font-size: 30px;
-    }
-
-    .WorkDesc {
+    
+    .headerContent {
         font-size: 20px;
+        margin: 0px 10px;
+        text-align: center;
+    }
+    
+    .Hero {
+        padding: 140px 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .meImg img {
+            border-radius: 200px;
+            align-self: baseline;
+        }
     }
 
-}
-
-li::marker {
-    color: #F4D24F;
-    font-size: 2rem;
-} */
-
-.Hero {
-    padding: 0px 15%;
-    display: flex;
-    align-items: center;
-
-    .meImg img {
-        border-radius: 200px;
-        align-self: baseline;
+    .AboutMe {
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .WorkPlace {
+            font-size: 30px;
+        }
+    
+        .WorkDesc {
+            font-size: 20px;
+        }
     }
-    height: 400px;
-}
-
-.AboutMe {
-    padding: 0px 0px 0px 13%;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 500%;
-
-    .WorkPlace {
-        font-size: 30px;
+    .area {
+        max-width: 80%;
+        width: 100%;
     }
-
-    .WorkDesc {
-        font-size: 20px;
+    
+    .arrow {
+        all: unset;
     }
-}
-
-.area {
-    max-width: 80%;
-    width: 100%;
-}
-
-.arrow {
-    all: unset;
 }

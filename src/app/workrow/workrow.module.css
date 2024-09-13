@@ -1,31 +1,68 @@
-.WorkRow {
-    padding: 0px 15%;
-    display: flex;
-    align-items: center;
+@media (min-width: 901px) {
+    .WorkRow {
+        padding: 0px 15%;
+        display: flex;
+        align-items: center;
 
-    .WorkYear {
-        font-size: 40px;
-        align-self: baseline;
-        text-align: center;
-        min-width: 240px;
+        .WorkYear {
+            font-size: 40px;
+            align-self: baseline;
+            text-align: center;
+            min-width: 240px;
+        }
+    }
+
+    .Experience {
+        padding: 0px 0px 0px 20%;
+        margin: 5px;
+
+        .WorkPlace {
+            font-size: 30px;
+        }
+
+        .WorkDesc {
+            font-size: 20px;
+        }
+
+    }
+
+    .Experience li::marker {
+        color: #F4D24F;
+        font-size: 2rem;
     }
 }
 
-.Experience {
-    padding: 0px 0px 0px 20%;
-    margin: 5px;
+@media (max-width: 901px) {
+    .WorkRow {
+        /* padding: 0px 15%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    .WorkPlace {
-        font-size: 30px;
+        .WorkYear {
+            font-size: 40px;
+            align-self: baseline;
+            text-align: center;
+            width: 100%;
+        }
     }
 
-    .WorkDesc {
-        font-size: 20px;
+    .Experience {
+        /* padding: 0px 0px 0px 20%; */
+        margin: 5px;
+
+        .WorkPlace {
+            font-size: 30px;
+        }
+
+        .WorkDesc {
+            font-size: 20px;
+        }
+
     }
 
-}
-
-.Experience li::marker {
-    color: #F4D24F;
-    font-size: 2rem;
+    .Experience li::marker {
+        color: #F4D24F;
+        font-size: 2rem;
+    }
 }

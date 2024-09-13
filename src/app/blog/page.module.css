@@ -1,165 +1,281 @@
-.Blog {
-    color: white;
-}
-
-.project {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    /* max-width: 270px; */
-    margin: 0px;
-
-    .projectDesc {
+@media (min-width: 901px) {
+    .Blog {
         color: white;
-        font-size: 15px;
     }
 
-    /* .projectImg img {
-        border-radius: 50px;
-    } */
-}
+    .project {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        /* max-width: 270px; */
+        margin: 0px;
 
-.projectTitle, .projectYear {
-    color: #F4D24F;
-    font-size: 30px;
-
-}
-
-.projectYear {
-    text-align: center;
-    margin: 1.25% 0%;
-}
-
-.projectTitle {  
-    margin: 10px 0px;
-}
-.projectTitle, .projectDesc {
-    text-align: left;
-}
-
-
-.Code {
-    color: white;
-}
-
-.projectGrid {
-    display: flex;
-    /* justify-content: space-around; */
-    flex-direction: row;
-    align-items: baseline;
-    flex-wrap: wrap;
-}
-.Hero {
-    /* height: 28vh; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0px 0px 30px 0px;
-    padding: 20px 10%;
-}
-
-.meImg img {
-    border-radius: 200px;
-    align-self: baseline;
-}
-
-.AboutMe {
-    padding: 0px 0px 0px 10%;
-    margin: 5px;
-}
-
-.headerAbout {
-    font-weight: bold;
-    font-size: 40px;
-    color: #F4D24F;
-}
-
-.headerContent {
-    font-size: 20px;
-}
-
-.WorkRow {
-    padding: 0px 15%;
-    display: flex;
-    align-items: center;
-
-    .WorkYear {
-        font-size: 40px;
-        align-self: baseline;
-        text-align: center;
-        max-width: 240px;
-    }
-}
-
-.Experience {
-    padding: 0px 0px 0px 20%;
-    margin: 5px;
-
-    .WorkPlace {
-        font-size: 30px;
+        .projectDesc {
+            color: white;
+            font-size: 15px;
+        }
     }
 
-    /* .WorkPlace:before {
-        content:"• ";
+    .projectTitle, .projectYear {
         color: #F4D24F;
-    } */
+        font-size: 30px;
 
-    .WorkDesc {
+    }
+
+    .projectYear {
+        text-align: center;
+        margin: 1.25% 0%;
+    }
+
+    .projectTitle {  
+        margin: 10px 0px;
+    }
+    .projectTitle, .projectDesc {
+        text-align: left;
+    }
+
+
+    .Code {
+        color: white;
+    }
+
+    .projectGrid {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    .Hero {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0px 0px 30px 0px;
+        padding: 20px 10%;
+    }
+
+    .meImg img {
+        border-radius: 200px;
+        align-self: baseline;
+    }
+
+    .AboutMe {
+        padding: 0px 0px 0px 10%;
+        margin: 5px;
+    }
+
+    .headerAbout {
+        font-weight: bold;
+        font-size: 40px;
+        color: #F4D24F;
+    }
+
+    .headerContent {
         font-size: 20px;
     }
 
-    /* .exp {
-        display: list-item;
-        list-style-type: disc;
-    } */
+    .WorkRow {
+        padding: 0px 15%;
+        display: flex;
+        align-items: center;
+
+        .WorkYear {
+            font-size: 40px;
+            align-self: baseline;
+            text-align: center;
+            max-width: 240px;
+        }
+    }
+
+    .Experience {
+        padding: 0px 0px 0px 20%;
+        margin: 5px;
+
+        .WorkPlace {
+            font-size: 30px;
+        }
+
+        .WorkDesc {
+            font-size: 20px;
+        }
+
+    }
+
+    .imageContainer {
+        position: relative;
+        overflow: hidden; /* Hide overflow */
+    }
+    
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the container */
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 0; /* Align to the bottom */
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity */
+        max-height: 100px;
+        font-size: 40px;
+    }
+
+    .date {
+        text-align: end;
+        margin: 15px 20px;
+    }
+
+    .project, .projectNoLeftMargin, .projectNoRightMargin {
+        width:23%;
+        height:23%;
+        margin: 0% 1.3% 2% 1.3%;
+    }
+
+    .project {
+        margin: 0% 1.3% 2% 1.3%;
+    }
+
+    .projectNoLeftMargin {
+        margin: 0% 1.3% 2% 0;
+    }
+
+    .projectNoRightMargin {
+        margin: 0% 0 2% 1.3%;
+    }
 }
 
-/* li::marker {
-    color: #F4D24F;
-    font-size: 2rem;
-} */
+@media (max-width: 900px) {
+    .Blog {
+        color: white;
+        padding: 140px 0px 0px 0px;
+    }
 
-.imageContainer {
-    position: relative;
-    overflow: hidden; /* Hide overflow */
-}
-  
-.image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the container */
-}
-  
-.overlay {
-    position: absolute;
-    bottom: 0; /* Align to the bottom */
-    left: 0;
-    width: 100%;
-    /* height: 20%; */
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity */
-    max-height: 100px;
-    font-size: 40px;
-}
+    .project {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 0px;
 
-.date {
-    text-align: end;
-    margin: 15px 20px;
-}
+        .projectDesc {
+            color: white;
+            font-size: 15px;
+        }
+    }
 
-.project, .projectNoLeftMargin, .projectNoRightMargin {
-    width:23%;
-    height:23%;
-    margin: 0% 1.3% 2% 1.3%;
-}
+    .projectTitle, .projectYear {
+        color: #F4D24F;
+        font-size: 30px;
 
-.project {
-    margin: 0% 1.3% 2% 1.3%;
-}
+    }
 
-.projectNoLeftMargin {
-    margin: 0% 1.3% 2% 0;
-}
+    .projectYear {
+        text-align: center;
+        margin: 1.25% 0%;
+    }
 
-.projectNoRightMargin {
-    margin: 0% 0 2% 1.3%;
+    .projectTitle {  
+        margin: 10px 0px;
+    }
+    .projectTitle, .projectDesc {
+        text-align: left;
+    }
+
+
+    .Code {
+        color: white;
+    }
+
+    .projectGrid {
+        /* display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap; */
+    }
+    .Hero {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0px 0px 30px 0px;
+        padding: 20px 10%;
+    }
+
+    .meImg img {
+        border-radius: 200px;
+        align-self: baseline;
+    }
+
+    .AboutMe {
+        padding: 0px 0px 0px 10%;
+        margin: 5px;
+    }
+
+    .headerAbout {
+        font-weight: bold;
+        font-size: 40px;
+        color: #F4D24F;
+    }
+
+    .headerContent {
+        font-size: 20px;
+    }
+
+    .WorkRow {
+        padding: 0px 15%;
+        display: flex;
+        align-items: center;
+
+        .WorkYear {
+            font-size: 40px;
+            align-self: baseline;
+            text-align: center;
+            max-width: 240px;
+        }
+    }
+
+    .Experience {
+        padding: 0px 0px 0px 20%;
+        margin: 5px;
+
+        .WorkPlace {
+            font-size: 30px;
+        }
+
+        .WorkDesc {
+            font-size: 20px;
+        }
+
+    }
+
+    .imageContainer {
+        position: relative;
+        overflow: hidden; /* Hide overflow */
+    }
+    
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the container */
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 0; /* Align to the bottom */
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity */
+        max-height: 100px;
+        font-size: 40px;
+    }
+
+    .date {
+        text-align: end;
+        margin: 15px 20px;
+    }
+
+    .project, .projectNoLeftMargin, .projectNoRightMargin {
+        width:100%;
+        height:100%;
+        margin: 10% 0% 10% 0;
+    }
 }

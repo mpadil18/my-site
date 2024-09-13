@@ -16,6 +16,8 @@ export default function Art() {
                     (artInfo.art_data).map((artPost, index) => (
                         // <div className={styles.artPostContainer} key={index}>
                         <Link
+                        legacyBehavior
+                        style={{ width: 'unset' }}
                         href={
                         {pathname: `/art/${artPost.title.replaceAll(" ", "_")}`
                         }} key={index}>
@@ -24,9 +26,8 @@ export default function Art() {
                                 alt={`${artPost.alt}`}
                                 width={350}
                                 height={350}
-                                className={(index % 3 == 0 ? styles.artPostNoLeftMargin : (index - 2) % 3 == 0 ? styles.artPostNoRightMargin : styles.artPost)}
+                                className={`${(index % 3 == 0 ? styles.artPostNoLeftMargin : (index - 2) % 3 == 0 ? styles.artPostNoRightMargin : styles.artPost)} ${(index % 2 == 0 ? styles.rightMargin : styles.leftMargin)}`}
                                 key={index}
-                                style={{ width: '32%', height: '32%' }}
                             />
                         </Link>
                     ))

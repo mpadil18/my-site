@@ -1,3 +1,4 @@
+@media (min-width: 901px) {
 .ArtDetailView {
     color: white;
     display: flex;
@@ -42,4 +43,65 @@
 .artDetailViewSubText {
     font-size: 25px;
     font-style: normal;
+}
+
+.artPostImage {
+    width: 70vh;
+    height: 70vh;
+    max-width: 85vw;
+    max-height: 85vw;
+}
+}
+
+@media (max-width: 900px) {
+    .Art {
+        padding: 100px 0px 0px 0px;
+    }
+    .ArtDetailView {
+        color: white;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .headerAbout {
+        visibility: hidden;
+    }
+    
+    .rowContainer {
+        /* max-width: 1500px; */
+        /* height: 100%; */
+        /* justify-content: space-between; */
+    }
+    
+    .artDetailViewText {
+        margin: 0px 0px 0px 2%;
+        /* max-width: 50%; */
+    }
+    
+    .sideHeading {
+        margin-bottom: 2%;
+    }
+    
+    .artPostTitle {
+        font-size: 40px;
+        font-style: italic;
+        margin: 0px 0px 10px 0px;
+    }
+    
+    .artPostDate {
+        font-size: 30px;
+    }
+    
+    .artDetailViewSubText {
+        font-size: 20px;
+        font-style: normal;
+        text-wrap: wrap;
+    }
+
+    .artPostImage {
+        width: 98vw;
+        height: 98vw;
+    }
+
 }
