@@ -26,7 +26,7 @@ export default function Art() {
                                 alt={`${artPost.alt}`}
                                 width={350}
                                 height={350}
-                                className={(index % 3 == 0 ? styles.artPostNoLeftMargin : (index - 2) % 3 == 0 ? styles.artPostNoRightMargin : styles.artPost)}
+                                className={`${(index % 3 == 0 ? styles.artPostNoLeftMargin : (index - 2) % 3 == 0 ? styles.artPostNoRightMargin : styles.artPost)} ${(index % 2 == 0 ? styles.rightMargin : styles.leftMargin)}`}
                                 key={index}
                             />
                         </Link>

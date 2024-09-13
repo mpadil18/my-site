@@ -74,10 +74,6 @@ export default function ArtDetailView({ params }: { params: { id: string } }) {
                                 width={350}
                                 height={350}
                                 className={styles.artPostImage}
-                                style={{     width: '70vh',
-                                    height: '70vh',
-                                    maxWidth: '85vw',
-                                    maxHeight: '85vw' }}
                     />
                     <div className={styles.artDetailViewText}>
                         <div className={styles.sideHeading}>

@@ -127,6 +127,7 @@ export default function BlogDetailView({ params }: { params: { id: string } }) {
                                                         alt={`${item.subImageAltText}`}
                                                         width={400}
                                                         height={400}
+                                                        style={{maxWidth:"100%", height:"100%", objectFit:"contain"}}
                                                         />
                                                     </div>
                                                     <div className={styles.subText}>{item.subText}</div>
