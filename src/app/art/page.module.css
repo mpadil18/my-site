@@ -33,6 +33,7 @@
 @media (max-width: 900px) {
     .Art {
         padding: 140px 0px 0px 0px;
+        width: 100vw;
     }
     .headerAbout {
         font-weight: bold;
@@ -47,8 +48,8 @@
     }
 
     .artPost, .artPostNoLeftMargin, .artPostNoRightMargin {
-        width: 47.5%;
-        height: 47.5%;
+        width: 45.5%;
+        height: 45.5%;
         margin: 10px 0px;
     }
 

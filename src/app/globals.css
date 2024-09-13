@@ -10,11 +10,24 @@ body {
     background: linear-gradient(to bottom right, black 20%, grey); */
     
     /* height: 100vh; */
-    padding: 0px 30px
 }
 
 hr {
     border-color: #F4D24F;
     background-color: #F4D24F;
     height: 5px;
+}
+
+@media (min-width: 901px) {
+    body {
+        padding: 0px 30px
+    }
+
+}
+
+@media (max-width: 900px) {
+    body {
+        padding: 0px 0px
+    }
+
 }
