@@ -25,6 +25,8 @@
     .site-name {
         color: #F4D24F;
         padding: 0px 10px;
+        font-size: 30px;
+        align-content: center;
     }
     .Menu {
         position: fixed;
