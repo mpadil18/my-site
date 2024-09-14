@@ -64,7 +64,7 @@ export default function Navbar() {
                 <Link href="/code" legacyBehavior><a onClick={handleClickMenu} style={{ textDecoration: 'none', color: 'white' }}><p className="Nav-Button">Code</p></a></Link>
                 <Link href="/blog" legacyBehavior><a onClick={handleClickMenu} style={{ textDecoration: 'none', color: 'white' }}><p className="Nav-Button">Blog</p></a></Link>
                 <Link href="/art" legacyBehavior><a onClick={handleClickMenu} style={{ textDecoration: 'none', color: 'white' }}><p className="Nav-Button">Art</p></a></Link>
-                <Link href="/mochampa" legacyBehavior><a onClick={handleClickMenu} style={{ textDecoration: 'none', color: 'white' }}><p className="Nav-Button">Mocha Map</p></a></Link>
+                <Link href="/mochamap" legacyBehavior><a onClick={handleClickMenu} style={{ textDecoration: 'none', color: 'white' }}><p className="Nav-Button">Mocha Map</p></a></Link>
             </div>
 
             :

@@ -1,5 +1,15 @@
-.mochaText {
-    color: white;
-    text-align: center;
-    margin: 25vh
+@media (min-width: 901px) {
+    .mochaText {
+        color: white;
+        text-align: center;
+        margin: 25vh
+    }
+}
+
+@media (max-width: 901px) {
+    .mochaText {
+        color: white;
+        text-align: center;
+        padding: 50vh 0%;
+    }
 }
