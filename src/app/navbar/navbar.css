@@ -39,11 +39,10 @@
         background: rgba(255, 209, 81, 0.3);
         height: 120px;
         z-index: 1000;
-        align-items: center;
     }
     
     .nav-buttons {
-        margin: 4px 0px;
+        margin: -6px;
     }
 
     .Nav-Button {
@@ -55,7 +54,8 @@
     }
 
     .hamburgerMenu {
-        padding: 10px 0px;
+        /* padding: 10px 0px; */
+        height: 100%;
     }
 
     .menu-container {
