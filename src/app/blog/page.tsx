@@ -35,10 +35,10 @@ export default function Blog() {
                   href={
                   {pathname: `/blog/${project.title.replaceAll(" ", "_")}`
                   }} key={project.title.replaceAll(" ", "_")} style={{ textDecoration: 'none', color: 'white' }}>
-                  <div className={styles.projectTitle}>{project.title.slice(0, 37)}{(project.title.length > (project.title.slice(0, 37)).length) ? "..." : ""}</div>
+                  <div className={styles.projectTitle}>{project.title.slice(0, 43)}{(project.title.length > (project.title.slice(0, 43)).length) ? "..." : ""}</div>
                   {
                     project.content[0].subText ?
-                    <div className={styles.projectDesc}>{project.content[0].subText.slice(0,150)}</div>
+                    <div className={styles.projectDesc}>{project.content[0].subText.slice(0,150)}{((project.content[0].subText).length > 150) ? "..." : ""}</div>
                     :
                     null
                   }
