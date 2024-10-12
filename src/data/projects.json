@@ -5,24 +5,28 @@
             "project_id": 0,
             "project_year": "2023",
             "project_title": "NeuroPets",
+            "project_url": "https://mpadil18.github.io/NeuroPets/",
             "project_desc": "An app designed to incentivize users to work towards a goal every day for 60 days, with the help of a digital pet! Earn points by `doing the thing` every day, and use them to buy accessories to dress up your pets."
         },
         {
             "project_id": 1,
             "project_year": "2021",
             "project_title": "Butterfly & Beetle",
+            "project_url": "https://ritzibitzi.itch.io/butterfly-and-beetle",
             "project_desc": "Oh no! Your bug friend got captured by a crow and is taken into the underground! Traverse through the pits and save them! (Created by Andrew Sanchez and Maritza Padilla)"
         },
         {
             "project_id": 2,
             "project_year": "2023",
             "project_title": "ReciPlan",
+            "project_url": "https://mpadil18.github.io/reciplan/",
             "project_desc": "A place where working people can quickly and easily access inexpensive recipes that align with their needs, and plan out meals using a random recipe generator specific to their inputted criteria. (Created by Andrew Lee, Maritza Padilla, and Ann Wang)"
         },
         {
             "project_id": 3,
             "project_year": "2020-23",
             "project_title": "GraceHacks",
+            "project_url": "http://grace-hacks.com",
             "project_desc": "A website to host information about GraceHack's upcoming events, specifically the first and only hackathon dedicated to gender-diverse students getting a footing in STEM."
         }
     ]
